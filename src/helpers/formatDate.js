@@ -7,4 +7,3 @@ export const formatDateToNow = date => {
 export const formatDate = date => {
   return format(new Date(date), 'Pp');
 };
-npm;
