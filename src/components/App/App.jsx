@@ -1,4 +1,5 @@
 import {
+  Points,
   BlogCard,
   Container,
   Section,
@@ -16,6 +17,7 @@ import transactions from 'data/transactions.json';
 export const App = () => {
   return (
     <Section>
+      <Points />
       <Container>
         <Heading marginBottom="50px" textAlign="center">
           Task 1
