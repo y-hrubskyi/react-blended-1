@@ -17,7 +17,6 @@ import transactions from 'data/transactions.json';
 export const App = () => {
   return (
     <Section>
-      <Points />
       <Container>
         <Heading marginBottom="50px" textAlign="center">
           Task 1
@@ -27,7 +26,7 @@ export const App = () => {
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 2
         </Heading>
-        <Statistics title={'Main Statistics'} stats={data} />
+        <Statistics title="Main Statistics" stats={data} />
 
         <Heading marginTop="50px" marginBottom="50px" textAlign="center">
           Task 3
@@ -38,6 +37,16 @@ export const App = () => {
           Task 4
         </Heading>
         <CryptoHistory transactions={transactions} />
+
+        <Heading
+          marginTop="50px"
+          marginBottom="50px"
+          textAlign="center"
+          title="Points"
+        >
+          Task 5
+        </Heading>
+        <Points />
       </Container>
     </Section>
   );
